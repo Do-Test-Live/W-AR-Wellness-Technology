@@ -1,0 +1,19 @@
+ErrorDocument 404 http://localhost/W-Vivid/404.html
+
+RewriteEngine on
+
+RewriteRule ^Home index.html [NE,L]
+
+RewriteRule ^Public-Relations public-relations.html [NE,L]
+
+RewriteRule ^Social-Media-Management social-media-management.html [NE,L]
+
+RewriteRule ^KOL-and-Talents-Management kol-and-talents-management.html [NE,L]
+
+RewriteRule ^Video-Production-and-Graphic-Design video-production-and-graphic-design.html [NE,L]
+
+RewriteRule ^Event-Management event-management.html [NE,L]
+
+RewriteRule ^Corporate-Communications corporate-communications.html [NE,L]
+
+
