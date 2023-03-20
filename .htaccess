@@ -8,3 +8,9 @@ RewriteRule ^Personal-Privacy-Statement personal-privacy-statement.html [NE,L]
 
 RewriteRule ^Refund-Policy refund-policy.html [NE,L]
 
+RewriteRule ^Product-3 product-3.html [NE,L]
+
+RewriteRule ^Product-2 product-2.html [NE,L]
+
+RewriteRule ^Product-1 product-1.html [NE,L]
+
