@@ -36,11 +36,11 @@
     <script src="js/vendor/modernizr.js"></script>
 
     <style>
-        body > div.blog-standard-wrap.px-120 > div > div > div:nth-child(2) > div > h4{
+        body > div.blog-standard-wrap.px-120 > div > div > div:nth-child(2) > div > h4 {
             color: #604a9d;
         }
 
-        .list-icons.flex-wrap.align-items-start li{
+        .list-icons.flex-wrap.align-items-start li {
             width: 100%;
         }
 
@@ -48,10 +48,12 @@
             list-style: none;
             counter-reset: item;
         }
+
         ol.custom-number-list li {
             counter-increment: item;
             margin-bottom: 5px;
         }
+
         ol.custom-number-list li:before {
             margin-right: 10px;
             content: counter(item);
@@ -68,13 +70,15 @@
             list-style: none;
             counter-reset: item;
         }
+
         ul.custom-alphabet-list li {
             counter-increment: item;
             margin-bottom: 5px;
         }
+
         ul.custom-alphabet-list li:before {
             margin-right: 15px;
-            content: counter(item,lower-alpha);
+            content: counter(item, lower-alpha);
             background: #f9982f;
             border-radius: 100%;
             color: white;
@@ -82,6 +86,23 @@
             height: 25px;
             text-align: center;
             display: inline-block;
+        }
+
+        .bg-yellow {
+            background: #f9982f !important;
+            border: 3px solid white;
+        }
+
+        .bg-red {
+            background: #d46134 !important;
+            border: 3px solid white;
+        }
+
+        .bg-white {
+            background: #fff9ed !important;
+            border: 3px solid white;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -160,13 +181,13 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="Product-1" class="nav-link">Product 1</a>
+                                        <a class="nav-link" href="Product-1">Product 1</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Product-2" class="nav-link">Product 2</a>
+                                        <a class="nav-link" href="Product-2">Product 2</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Product-3" class="nav-link">Product 3</a>
+                                        <a class="nav-link" href="Product-3">Product 3</a>
                                     </li>
                                 </ul>
                             </li>
@@ -221,11 +242,200 @@
     <div class="container">
         <div class="row gy-5 align-items-center">
             <div class="col-md-12">
-                <div class="right-content-about">
-                    <div class="sec-title">
-                        <h2 class="tag1"></h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>
+                            保障內容
+                        </h1>
+                        <p class="mt-2">
+                            參與我們的會籍,即可以一個固定的優惠價格使用我 們網絡的醫療服務提供者
+                        </p>
+                        <div class="table-responsive mt-5 pt-4">
+                            <table class="mt-2 table text-center">
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td class="bg-yellow">
+                                        $130<br/>
+                                        每人,每月
+                                    </td>
+                                    <td class="bg-yellow">
+                                        $175 <br/>
+                                        每人,每月
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow" colspan="2" rowspan="2">會籍等級</td>
+                                    <td class="bg-yellow">
+                                        Gold
+                                    </td>
+                                    <td class="bg-yellow">
+                                        Platinum
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-red" colspan="2">
+                                        醫療網絡自付費
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow">1</td>
+                                    <td class="text-start bg-white">
+                                        普通科門診醫生諮詢(每次)<br/>
+                                        每次求診連藥物<br/>
+                                        每日最多1次<br/>
+                                        會籍年度內20次
+                                    </td>
+                                    <td class="bg-white">
+                                        30
+                                    </td>
+                                    <td class="bg-white">
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow">2</td>
+                                    <td class="text-start bg-white">
+                                        中醫治療求診護理<br/>
+                                        只限中藥治療、跌打、<br/>
+                                        針灸及推拿(每次)<br/>
+                                        每日最多1次<br/>
+                                        會籍年度內10次
+                                    </td>
+                                    <td class="bg-white">
+                                        30
+                                    </td>
+                                    <td class="bg-white">
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow">3</td>
+                                    <td class="text-start bg-white">
+                                        專科門診醫生諮詢 <br/>
+                                        每次求診連藥物 <br/>
+                                        每日最多1次 <br/>
+                                        會籍年度內10次
+                                    </td>
+                                    <td class="bg-white">
+                                        30
+                                    </td>
+                                    <td class="bg-white">
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-yellow">4</td>
+                                    <td class="text-start bg-white">
+                                        物理治療及脊骨神<br/>
+                                        經治療(每次) <br/>
+                                        每次求診護理 <br/>
+                                        每日最多1次 <br/>
+                                        會籍年度內10次
+                                    </td>
+                                    <td class="bg-white">
+                                        30
+                                    </td>
+                                    <td class="bg-white">
+                                        0
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                </div><!--/.right-content-about-->
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h1>
+                                    VIP 折扣優惠
+                                </h1>
+                                <h4>
+                                    經續會,更多的折扣優<br/>
+                                    惠便會源源不絕地提供。<br/>
+                                    而醫療服務的使用率更<br/>
+                                    不會影響折扣的幅度!
+                                </h4>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="table-responsive">
+                                    <table class="table text-center">
+                                        <tr>
+                                            <td class="bg-yellow">
+                                                會籍年期
+                                            </td>
+                                            <td class="bg-yellow">
+                                                折扣率
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-white">
+                                                首年
+                                            </td>
+                                            <td class="bg-white">
+                                                0
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-white">
+                                                第2年續會
+                                            </td>
+                                            <td class="bg-white">
+                                                10%
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-white">
+                                                第3年續會
+                                            </td>
+                                            <td class="bg-white">
+                                                15%
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-white">
+                                                第4年續會
+                                            </td>
+                                            <td class="bg-white">
+                                                20%
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-white">
+                                                第5年續會
+                                            </td>
+                                            <td class="bg-white">
+                                                25%
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-white">
+                                                第6年續會及之後
+                                            </td>
+                                            <td class="bg-white">
+                                                30%
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-4 text-center" style="background: #f9982f;border-radius: unset">
+                            <h3>
+                                <span>
+                                    使用方法
+                                </span>
+                            </h3>
+                            僱員可以根據需要選擇不同的醫療服務。<br/>
+                            當中不會涉及繁複的索償,<br/>
+                            只需出示您專 屬的二維碼(QR Code) 即可就醫。<br/>
+                            <h3 class="mt-2">
+                                <span>
+                                    非常方便!
+                                </span>
+                            </h3>
+                        </div>
+                        <img alt="" class="img-fluid" src="img/home/4.jpg"/>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
