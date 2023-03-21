@@ -14,3 +14,7 @@ RewriteRule ^Product-2 product-2.html [NE,L]
 
 RewriteRule ^Product-1 product-1.html [NE,L]
 
+RewriteRule ^Coming-Soon coming-soon.html [NE,L]
+
+RewriteRule ^Terms-and-Condition terms-and-condition.html [NE,L]
+
