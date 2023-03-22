@@ -3384,11 +3384,11 @@ p {
 
 .accordion-item {
     margin-bottom: 30px;
-    background: #fff;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, .08);
+    background: #fff0;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0);
     border: 0;
-    padding: 23px 40px;
-    border-radius: 50px !important
+    padding: 21px 0px;
+    border-radius: 50px !important;
 }
 
 .accordion-body, .footer-widgets-wrap.v2 {
@@ -3398,7 +3398,7 @@ p {
 .accordion-button {
     padding: 0 40px 0 0;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 34px;
     color: #1a1a1a;
     position: relative;

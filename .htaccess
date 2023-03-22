@@ -18,3 +18,5 @@ RewriteRule ^Coming-Soon coming-soon.html [NE,L]
 
 RewriteRule ^Terms-and-Condition terms-and-condition.html [NE,L]
 
+RewriteRule ^Checkout checkout.html [NE,L]
+
