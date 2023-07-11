@@ -51,7 +51,7 @@ $db_handle = new DBController();
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                                             <?php
-                                            $row_count = $db_handle->numRows("SELECT * FROM order_detail order by id desc");
+                                            $row_count = $db_handle->numRows("SELECT * FROM success_order order by id desc");
                                             echo $row_count;
                                             ?>
                                         </div>

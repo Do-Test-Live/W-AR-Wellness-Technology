@@ -1,6 +1,8 @@
 <?php
 include('include/dbController.php');
 $db_handle = new DBController();
+$date=date('Y-m-d H:i:s');
+$insert = $db_handle->insertQuery("INSERT INTO `order_detail`(`inserted_at`) VALUES ('$date')");
 ?>
 <!DOCTYPE html>
 <head>
