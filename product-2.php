@@ -1,3 +1,7 @@
+<?php
+include('include/dbController.php');
+$db_handle = new DBController();
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
@@ -283,19 +287,36 @@
                             驗身優惠劵：我們為您提供優惠的驗身套餐，以幫助您維持良好的健康狀態。作為我們的會員，您可以享有優惠價格，讓您可以更經濟地進行驗身，同時也可以更好地關注您的健康。
                         </li>
                     </ol>
-                    <form action="https://test.paydollar.com/b2cDemo/eng/payment/payForm.jsp" method="post" name="payFormCcard">
-                        <input name="merchantId" type="hidden" value="88160534">
-                        <input name="amount" type="hidden" value="150">
-                        <input name="orderRef" type="hidden" value="001">
-                        <input name="currCode" type="hidden" value="344">
+
+                    <?php
+
+                    $mid = '88160534';
+                    $data = $db_handle->runQuery("SELECT * FROM products where id=2");
+                    $amount=$data[0]['product_price'];
+
+                    $data = $db_handle->runQuery("SELECT * FROM order_detail order by id desc limit 1");
+                    $order_number=$data[0]['id']+1;
+                    $currCode='344';
+                    $hashSecret = 'IymYC1yCKwDdT2O6CEfVnUSaTQeD73cx';
+                    $secureHash = sha1($mid.'|'.$order_number.'|'.$currCode.'|'.$amount.'|N|'.$hashSecret);
+                    ?>
+                    <form action="https://test.paydollar.com/b2cDemo/eng/payment/payForm.jsp" method="post"
+                          name="payFormCcard">
+                        <input name="merchantId" type="hidden" value="<?php echo $mid; ?>">
+                        <input name="amount" type="hidden" value="<?php echo $amount; ?>">
+                        <input name="orderRef" type="hidden" value="<?php echo $order_number; ?>">
+                        <input name="currCode" type="hidden" value="<?php echo $currCode; ?>">
                         <input name="mpsMode" type="hidden" value="NIL">
-                        <input name="successUrl" type="hidden" value="https://localhost/W-AR-Wellness-Technology/success.php">
-                        <input name="failUrl" type="hidden" value="https://localhost/W-AR-Wellness-Technology/fail.html">
-                        <input name="cancelUrl" type="hidden" value="https://localhost/W-AR-Wellness-Technology/cancel.html">
+                        <input name="successUrl" type="hidden"
+                               value="https://localhost/W-AR-Wellness-Technology/success.php">
+                        <input name="failUrl" type="hidden"
+                               value="https://localhost/W-AR-Wellness-Technology/fail.html">
+                        <input name="cancelUrl" type="hidden"
+                               value="https://localhost/W-AR-Wellness-Technology/cancel.html">
                         <input name="payType" type="hidden" value="N">
                         <input name="lang" type="hidden" value="E">
                         <input name="payMethod" type="hidden" value="ALL">
-                        <input name="secureHash" type="hidden" value="c85c6d5d4aa8a1f93ab7c14cb291e7b0e25f1830">
+                        <input name="secureHash" type="hidden" value="<?php echo $secureHash; ?>">
                         <input name="submit" value="Order" class="btn btn-primary" type="submit">
                     </form>
                 </div><!--/.right-content-about-->
