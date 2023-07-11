@@ -14,7 +14,7 @@ if (isset($_SESSION['userid'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login - NGT TECH</title>
+    <title>Login - AR Wellness</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -43,7 +43,7 @@ if (isset($_SESSION['userid'])) {
                         <div class="col-lg-12">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">NGT TECH Admin panel!</h1>
+                                    <h1 class="h4 text-gray-900 mb-4">AR Wellness Admin panel!</h1>
                                 </div>
                                 <form class="user" action="" method="post">
                                     <div class="form-group">

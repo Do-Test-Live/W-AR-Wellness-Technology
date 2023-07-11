@@ -3,13 +3,13 @@ class DBController {
     private $host = "localhost";
     private $user = "root";
     private $password = "";
-    private $database = "ngt_tech";
+    private $database = "arwellnesshk";
     private $from_email='noreply@ngt-tech.io';
     private $notification_email='francis00358@gmail.com';
     private $conn;
 
     function __construct() {
-        if($_SERVER['SERVER_NAME']=="ngt-tech.io"||$_SERVER['SERVER_NAME']=="www.ngt-tech.io"){
+        if($_SERVER['SERVER_NAME']=="arwellnesshk.com"||$_SERVER['SERVER_NAME']=="www.arwellnesshk.com"){
             $this->host = "localhost";
             $this->user = "ngttech";
             $this->password = "@Bcd1234";

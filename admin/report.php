@@ -23,8 +23,8 @@ if (isset($_GET['report'])) {
     }
 
     $email_to = $db_handle->notify_email();
-    $subject = 'Email From NGT TECH';
-    $headers = "From: NGT TECH <" . $db_handle->from_email() . ">\r\n";
+    $subject = 'Email From AR Wellness';
+    $headers = "From: AR Wellness <" . $db_handle->from_email() . ">\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
     $messege = "<html>
@@ -113,8 +113,8 @@ if (isset($_GET['report_user'])) {
     }
 
     $email_to = $db_handle->notify_email();
-    $subject = 'Email From NGT TECH';
-    $headers = "From: NGT TECH <" . $db_handle->from_email() . ">\r\n";
+    $subject = 'Email From AR Wellness';
+    $headers = "From: AR Wellness <" . $db_handle->from_email() . ">\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
     $messege = "<html>

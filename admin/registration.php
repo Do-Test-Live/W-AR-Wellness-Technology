@@ -14,7 +14,7 @@ $db_handle = new DBController();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Apply - NGT TECH</title>
+    <title>Apply - AR Wellness</title>
 
     <?php require_once 'include/css.php'; ?>
 

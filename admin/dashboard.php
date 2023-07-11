@@ -14,7 +14,7 @@ $db_handle = new DBController();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard - NGT TECH</title>
+    <title>Dashboard - AR Wellness</title>
 
     <?php require_once 'include/css.php'; ?>
 
@@ -47,11 +47,11 @@ $db_handle = new DBController();
                                 <div class="row no-gutters align-items-center">
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Registration Data
+                                            Total Order
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                                             <?php
-                                            $row_count = $db_handle->numRows("SELECT * FROM registration order by id desc");
+                                            $row_count = $db_handle->numRows("SELECT * FROM order_detail order by id desc");
                                             echo $row_count;
                                             ?>
                                         </div>
