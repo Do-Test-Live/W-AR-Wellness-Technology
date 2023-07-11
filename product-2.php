@@ -308,11 +308,11 @@ $db_handle = new DBController();
                         <input name="currCode" type="hidden" value="<?php echo $currCode; ?>">
                         <input name="mpsMode" type="hidden" value="NIL">
                         <input name="successUrl" type="hidden"
-                               value="https://localhost/W-AR-Wellness-Technology/success.php">
+                               value="https://arwellnesshk.com/success.php">
                         <input name="failUrl" type="hidden"
-                               value="https://localhost/W-AR-Wellness-Technology/fail.html">
+                               value="https://arwellnesshk.com/fail.html">
                         <input name="cancelUrl" type="hidden"
-                               value="https://localhost/W-AR-Wellness-Technology/cancel.html">
+                               value="https://arwellnesshk.com/cancel.html">
                         <input name="payType" type="hidden" value="N">
                         <input name="lang" type="hidden" value="E">
                         <input name="payMethod" type="hidden" value="ALL">
