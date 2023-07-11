@@ -289,12 +289,12 @@
                         <input name="orderRef" type="hidden" value="001">
                         <input name="currCode" type="hidden" value="344">
                         <input name="mpsMode" type="hidden" value="NIL">
-                        <input name="successUrl" type="hidden" value="https://arwellnesshk.com/Success.html">
-                        <input name="failUrl" type="hidden" value="https://arwellnesshk.com/Fail.html">
-                        <input name="cancelUrl" type="hidden" value="https://arwellnesshk.com/Cancel.html">
+                        <input name="successUrl" type="hidden" value="https://localhost/W-AR-Wellness-Technology/success.php">
+                        <input name="failUrl" type="hidden" value="https://localhost/W-AR-Wellness-Technology/fail.html">
+                        <input name="cancelUrl" type="hidden" value="https://localhost/W-AR-Wellness-Technology/cancel.html">
                         <input name="payType" type="hidden" value="N">
                         <input name="lang" type="hidden" value="E">
-                        <input name="payMethod" type="hidden" value="CC">
+                        <input name="payMethod" type="hidden" value="ALL">
                         <input name="secureHash" type="hidden" value="c85c6d5d4aa8a1f93ab7c14cb291e7b0e25f1830">
                         <input name="submit" value="Order" class="btn btn-primary" type="submit">
                     </form>
